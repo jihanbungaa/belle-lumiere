@@ -8,18 +8,18 @@
     <style>
         .page-hero {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            padding: 150px 0 100px;
+            padding: 100px 0 50px;
             text-align: center;
             color: var(--light-color);
         }
 
         .page-hero h1 {
-            font-size: 3rem;
+            font-size: 2rem;
             margin-bottom: 20px;
         }
 
         .page-hero p {
-            font-size: 1.2rem;
+            font-size: 1rem;
             max-width: 600px;
             margin: 0 auto;
         }
@@ -35,8 +35,17 @@
             align-items: start;
         }
 
+        .contact-grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
         .contact-info {
             padding: 40px;
+        }
+
+        .contact-info {
+            padding: 20px;
         }
 
         .contact-info h2 {
@@ -59,10 +68,19 @@
             align-items: start;
         }
 
+        .info-item {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
         .info-icon {
             font-size: 2rem;
             color: var(--primary-color);
             min-width: 40px;
+        }
+
+        .info-icon {
+            font-size: 1.5rem;
         }
 
         .info-details h3 {
@@ -93,6 +111,10 @@
             gap: 15px;
         }
 
+        .social-icons {
+            justify-content: center;
+        }
+
         .social-icon {
             width: 50px;
             height: 50px;
@@ -115,6 +137,10 @@
             background: var(--gray-color);
             padding: 50px;
             border-radius: 10px;
+        }
+
+        .contact-form {
+            padding: 20px;
         }
 
         .contact-form h2 {
@@ -211,6 +237,10 @@
             gap: 40px;
         }
 
+        .faq-grid {
+            grid-template-columns: 1fr;
+        }
+
         .faq-item {
             background: var(--gray-color);
             padding: 30px;
@@ -251,6 +281,64 @@
 
             .contact-info {
                 padding: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .contact-info {
+                padding: 20px;
+            }
+
+            .contact-form {
+                padding: 20px;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .page-hero p {
+                font-size: 1rem;
+            }
+
+            .info-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .info-icon {
+                font-size: 1.5rem;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .submit-btn {
+                font-size: 1rem;
+                padding: 15px;
+            }
+
+            .form-group label {
+                font-size: 0.9rem;
+            }
+
+            .form-group input,
+            .form-group textarea,
+            .form-group select {
+                font-size: 0.9rem;
+                padding: 10px;
             }
         }
     </style>
